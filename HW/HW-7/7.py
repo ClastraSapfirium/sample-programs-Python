@@ -20,8 +20,7 @@ async def process_help_command(message: types.Message):
 
 @dp.message_handler()
 async def link(message: types.Message):
-    # В переменной msg.text
-    # содержится текст сообщения
+    
     yt_obj=message.from_user.id
     await bot.send_message(message.from_user.id, "Ссылка для скачивания задана.")
 def clicked():
