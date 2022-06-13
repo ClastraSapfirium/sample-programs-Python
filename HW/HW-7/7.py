@@ -21,11 +21,9 @@ async def process_help_command(message: types.Message):
 @dp.message_handler()
 async def link(message: types.Message):
     
-    yt_obj=message.from_user.id
+    yt_obj=link=message.from_user.id
     await bot.send_message(message.from_user.id, "Ссылка для скачивания задана.")
-def clicked():
     global txt1,txt2,txt3
-    link=txt1.get()
     path=txt2.get()
     nm=txt3.get()
     nm+='.mp4'
